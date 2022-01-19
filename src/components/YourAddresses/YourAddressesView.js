@@ -2,7 +2,7 @@ import React from 'react'
 import CardAddress from './CardAddress'
 import { Link } from 'react-router-dom'
 
-function YourAddressesView(props) {
+const YourAddressesView = (props) => {
   return (
     <div className="container mt-5 mb-5">
       {/* <!-- URL Breadcrumb Starts --> */}

@@ -1,6 +1,6 @@
 import React from 'react'
 import ImageSlider from './ImageSlider';
-import HomePageProductContainer from './../HomePageProduct/HomePageProductContainer';
+import HomePageProduct from './../HomePageProduct/HomePageProduct';
 
 function LandingPage(props) {
   document.title = "Online site for shopping."
@@ -8,7 +8,7 @@ function LandingPage(props) {
     <React.Fragment>
       <div className="container-fluid px-0">
         <ImageSlider />
-        <HomePageProductContainer />
+        <HomePageProduct />
       </div>
     </React.Fragment>
   )

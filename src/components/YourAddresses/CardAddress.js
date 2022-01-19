@@ -1,6 +1,6 @@
 import React from 'react'
 
-function CardAddress(props) {
+const CardAddress = (props) => {
   return (
     <div className="card" >
       <div className="card-header bg-transparent">

@@ -37,10 +37,10 @@ function NewAddressView(props) {
           </select>
           <div className="valid-feedback">
             <i className="far text-success fa-thumbs-up"></i> OK
-        </div>
+          </div>
           <div className="invalid-feedback">
             <i className="fas text-danger fa-exclamation-triangle"></i> Some error in Country/Region.
-        </div>
+          </div>
         </div>
 
         <TextFieldInput
@@ -154,15 +154,15 @@ function NewAddressView(props) {
           </select>
           <div className="valid-feedback">
             <i className="far text-success fa-thumbs-up"></i> OK
-        </div>
+          </div>
           <div className="invalid-feedback">
             <i className="fas text-danger fa-exclamation-triangle"></i> Some error in state.
-        </div>
+          </div>
         </div>
 
         <h5>Add delivery instructions</h5>
         <p>Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than
-        planned.</p>
+          planned.</p>
 
         <div className="form-group">
           <label htmlFor="addressType">Address Type</label>
@@ -173,10 +173,10 @@ function NewAddressView(props) {
           </select>
           <div className="valid-feedback">
             <i className="far text-success fa-thumbs-up"></i> OK
-        </div>
+          </div>
           <div className="invalid-feedback">
             <i className="fas text-danger fa-exclamation-triangle"></i> Some error in address type.
-        </div>
+          </div>
         </div>
 
         <button type="submit" className="btn btn-warning shadow rounded">Add address</button>

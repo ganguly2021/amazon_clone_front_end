@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-function YourAccountView(props) {
+const YourAccountView = (props) => {
   const { t, i18n } = props;
   const rtl = ( i18n.languages[0] == 'pk' ? 'text-right' : '');
 

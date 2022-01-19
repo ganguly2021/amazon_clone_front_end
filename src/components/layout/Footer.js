@@ -3,7 +3,7 @@ import React from 'react'
 function Footer(props) {
 
   const { t, i18n } = props;
-  const rtl = ( i18n.languages[0] == 'pk' ? 'text-right' : '');
+  const rtl = (i18n.languages[0] == 'pk' ? 'text-right' : '');
 
   return (
     <React.Fragment>
@@ -60,7 +60,7 @@ function Footer(props) {
         </div>
 
         {/* <!-- Sub footer starts --> */}
-        <div className="py-3 mt-3 shadow-lg" style={{ backgroundColor: "#131a22", fontSize: "12px"}}>
+        <div className="py-3 mt-3 shadow-lg" style={{ backgroundColor: "#131a22", fontSize: "12px" }}>
           <div className="container">
 
             <div className="row text-white">
@@ -103,7 +103,7 @@ function Footer(props) {
             <div className="row my-5">
               <div className="col-md-12 text-center text-white">
                 <p>
-                  <i className="far fa-copyright"></i> { "1996-" + (new Date().getFullYear()) + ", " + t('footer.ending_title')}
+                  <i className="far fa-copyright"></i> {"1996-" + (new Date().getFullYear()) + ", " + t('footer.ending_title')}
                 </p>
               </div>
             </div>

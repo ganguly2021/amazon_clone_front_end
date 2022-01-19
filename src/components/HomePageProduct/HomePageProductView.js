@@ -1,6 +1,6 @@
 import React from 'react'
 
-function HomePageProductView() {
+const HomePageProductView = () => {
   return (
     <React.Fragment>
       <div className="container mb-5" style={{ marginTop: "-200px" }}>
@@ -16,7 +16,7 @@ function HomePageProductView() {
                   <div className="col-md-6">
                     <p className="font-weight-bold text-danger">
                       <i className="fas fa-rupee-sign"></i> 150.00
-                  </p>
+                    </p>
                   </div>
                   <div className="col-md-6">
                     <a href="#" className="btn btn-success btn-sm btn-block">Buy</a>
@@ -36,7 +36,7 @@ function HomePageProductView() {
                   <div className="col-md-6">
                     <p className="font-weight-bold text-danger">
                       <i className="fas fa-rupee-sign"></i> 650.00
-                  </p>
+                    </p>
                   </div>
                   <div className="col-md-6">
                     <a href="#" className="btn btn-success btn-sm btn-block">Buy</a>
@@ -56,7 +56,7 @@ function HomePageProductView() {
                   <div className="col-md-6">
                     <p className="font-weight-bold text-danger">
                       <i className="fas fa-rupee-sign"></i> 550.00
-                  </p>
+                    </p>
                   </div>
                   <div className="col-md-6">
                     <a href="#" className="btn btn-success btn-sm btn-block">Buy</a>
@@ -76,7 +76,7 @@ function HomePageProductView() {
                   <div className="col-md-6">
                     <p className="font-weight-bold text-danger">
                       <i className="fas fa-rupee-sign"></i> 750.00
-                  </p>
+                    </p>
                   </div>
                   <div className="col-md-6">
                     <a href="#" className="btn btn-success btn-sm btn-block">Buy</a>
@@ -99,7 +99,7 @@ function HomePageProductView() {
                   <div className="col-md-6">
                     <p className="font-weight-bold text-danger">
                       <i className="fas fa-rupee-sign"></i> 150.00
-                  </p>
+                    </p>
                   </div>
                   <div className="col-md-6">
                     <a href="#" className="btn btn-success btn-sm btn-block">Buy</a>
@@ -119,7 +119,7 @@ function HomePageProductView() {
                   <div className="col-md-6">
                     <p className="font-weight-bold text-danger">
                       <i className="fas fa-rupee-sign"></i> 650.00
-                  </p>
+                    </p>
                   </div>
                   <div className="col-md-6">
                     <a href="#" className="btn btn-success btn-sm btn-block">Buy</a>
@@ -139,7 +139,7 @@ function HomePageProductView() {
                   <div className="col-md-6">
                     <p className="font-weight-bold text-danger">
                       <i className="fas fa-rupee-sign"></i> 550.00
-                  </p>
+                    </p>
                   </div>
                   <div className="col-md-6">
                     <a href="#" className="btn btn-success btn-sm btn-block">Buy</a>
@@ -159,7 +159,7 @@ function HomePageProductView() {
                   <div className="col-md-6">
                     <p className="font-weight-bold text-danger">
                       <i className="fas fa-rupee-sign"></i> 750.00
-                  </p>
+                    </p>
                   </div>
                   <div className="col-md-6">
                     <a href="#" className="btn btn-success btn-sm btn-block">Buy</a>

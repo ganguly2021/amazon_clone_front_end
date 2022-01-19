@@ -55,7 +55,7 @@ function NavbarView(props) {
   )
 
   const drawerProfilePic = () => {
-    if (isAuthenticated){
+    if (isAuthenticated) {
       return (
         <img
           src={apiBaseURL + "/profile_pic/" + user.profile_pic}
@@ -87,7 +87,7 @@ function NavbarView(props) {
             <div className="drawer-header bg-dark text-white">
               <h4 className={`drawer-title mx-auto ${rtl}`} id="drawer-demo-title">
                 {drawerProfilePic()}
-                {t('navbar.sidebar_title', { username: ( user.username ? user.username : "Sign In" ) })}
+                {t('navbar.sidebar_title', { username: (user.username ? user.username : "Sign In") })}
               </h4>
             </div>
             <div className="drawer-body">
