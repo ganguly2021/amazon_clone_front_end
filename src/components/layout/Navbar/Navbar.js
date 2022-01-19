@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import NavbarView from './NavbarView';
 import { logoutUser } from './../../../redux/actions/loginActions'
 import { connect } from 'react-redux'
+import { useNavigate } from 'react-router-dom';
 
 const Navbar = (props) => {
 
@@ -9,6 +10,8 @@ const Navbar = (props) => {
   const [selectedCat, setSelectedCat] = useState(0)
   const [productCategory, setProductCategory] = useState([])
   const [query, setQuery] = useState('')
+
+  const navigate = useNavigate
 
 
   useEffect(() => {

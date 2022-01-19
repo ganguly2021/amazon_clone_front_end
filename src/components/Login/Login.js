@@ -15,7 +15,7 @@ const Login = (props) => {
     // Change page title
     document.title = "Amazon Clone - Login"
 
-    if (this.props.login.isAuthenticated) {
+    if (props.login.isAuthenticated) {
       navigate("/your_account")
     }
 
