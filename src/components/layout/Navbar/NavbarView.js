@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { apiBaseURL } from './../../../utils/constant'
+import { apiAssetsURL } from './../../../utils/constant'
 
 function NavbarView(props) {
   const { t, rtl } = props;
@@ -11,7 +11,7 @@ function NavbarView(props) {
       <a className="nav-link" href="login.html" id="userAccount" role="button" data-toggle="dropdown"
         aria-haspopup="true" aria-expanded="false">
         <img
-          src={apiBaseURL + "/profile_pic/" + user.profile_pic}
+          src={apiAssetsURL + "/profile_pic/" + user.profile_pic}
           width="40"
           height="40"
           className="rounded-circle"
@@ -58,7 +58,7 @@ function NavbarView(props) {
     if (isAuthenticated) {
       return (
         <img
-          src={apiBaseURL + "/profile_pic/" + user.profile_pic}
+          src={apiAssetsURL + "/profile_pic/" + user.profile_pic}
           width="40"
           height="40"
           className="rounded-circle"

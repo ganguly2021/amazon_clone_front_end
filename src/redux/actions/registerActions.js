@@ -6,10 +6,10 @@ import {
 } from './types'
 
 import axios from 'axios'
-import { apiBaseURL } from './../../utils/constant'
+import { apiBaseURL, apiVersion } from './../../utils/constant'
 
 
-export const registerRequest = (user, history) => (dispatch) => {
+export const registerRequest = (user, navigate) => (dispatch) => {
   // user register request start
   dispatch({ type: REGISTER_REQUEST })
 
@@ -18,7 +18,7 @@ export const registerRequest = (user, history) => (dispatch) => {
 
   // AJAX call to register user
   axios.post(
-    `${apiBaseURL}/api/user/register`,
+    `${apiBaseURL}${apiVersion}/users/register`,
     user
   ).then((res)=>{
     // user register response received
@@ -26,10 +26,10 @@ export const registerRequest = (user, history) => (dispatch) => {
 
 
     // redirect user to login page
-    history.push("/login")
+    navigate("/login")
 
   }).catch((err)=>{
-
+  console.log(err)
     // set error related to register
     dispatch(registerError(err.response.data.error))
 

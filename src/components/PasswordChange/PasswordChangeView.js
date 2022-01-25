@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 import FileFieldInput from './../common/FileFieldInput'
 import TextFieldInput from './../common/TextFieldInput'
-import { apiBaseURL } from './../../utils/constant'
+import { apiAssetsURL } from './../../utils/constant'
 
 function PasswordChangeView(props) {
 
@@ -33,7 +33,7 @@ function PasswordChangeView(props) {
       <h3 className={`${rtl}`}>{t('password_change.title')}</h3>
       <div className="card mx-auto mt-5 shadow p-3 mb-5 bg-body rounded" style={{ width: '18rem' }}>
         <img
-          src={apiBaseURL + "/profile_pic/" + user.profile_pic}
+          src={apiAssetsURL + "/profile_pic/" + user.profile_pic}
           width="200"
           height="200"
           className="rounded-circle mx-auto"
