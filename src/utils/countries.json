@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Select Country",
+    "states": ["Select Country First."]
+  },
+  {
+    "name": "India",
+    "states": [
+      "Select State",
+      "Uttar Pradesh",
+      "Maharastra",
+      "Bihar",
+      "West Bengal",
+      "North East"
+    ]
+  },
+  {
+    "name": "Pakistan",
+    "states": [
+      "Select State",
+      "Karachi",
+      "Sindh",
+      "Punjab",
+      "Balochistan",
+      "Lahore"
+    ]
+  },
+  {
+    "name": "Bangladesh",
+    "states": [
+      "Select State",
+      "Dhaka",
+      "Khulna",
+      "Gazipur",
+      "Sylhet",
+      "Rajshahi"
+    ]
+  },
+  {
+    "name": "Sri Lanka",
+    "states": [
+      "Select State",
+      "Western Province",
+      "Central Province",
+      "Southern Province",
+      "Uva Province",
+      "Sabaragamuwa Province"
+    ]
+  }
+]

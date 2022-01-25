@@ -1,45 +1,80 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-import TextFieldInput from './../common/TextFieldInput'
+import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
+import TextFieldInput from "./../common/TextFieldInput";
+import countries from "./../../utils/countries.json";
 
 function NewAddressView(props) {
-  const { t, i18n } = props;
-  const rtl = (i18n.languages[0] == 'pk' ? 'text-right' : '');
-  const error = {}
+  const { t, i18n, selectedIndex } = props;
+  const rtl = i18n.languages[0] == "pk" ? "text-right" : "";
+  const error = {};
 
   return (
-
     <div className="container mt-5 mb-5">
       {/* <!-- New Address Form Starts -->
     <!-- URL Breadcrumb Starts --> */}
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb bg-transparent ml-n3">
-          <li className="breadcrumb-item"><Link to="/your_account">Your Account</Link></li>
-          <li className="breadcrumb-item"><Link to="/your_addresses">Your Addresses</Link></li>
-          <li className="breadcrumb-item active text-danger" aria-current="page">New Address</li>
+          <li className="breadcrumb-item">
+            <Link to="/your_account">Your Account</Link>
+          </li>
+          <li className="breadcrumb-item">
+            <Link to="/your_addresses">Your Addresses</Link>
+          </li>
+          <li
+            className="breadcrumb-item active text-danger"
+            aria-current="page"
+          >
+            New Address
+          </li>
         </ol>
       </nav>
       {/* <!-- URL Breadcrumb Ends --> */}
 
       <h3 className="font-weight-bold">Add a new address</h3>
-      <p className="font-weight-bold">Or pick up your packages at your convenience from our self-service locations.</p>
+      <p className="font-weight-bold">
+        Or pick up your packages at your convenience from our self-service
+        locations.
+      </p>
 
       {/* <!-- New Address Form Starts --> */}
-      <form onSubmit={props.handleSubmit} className="mx-auto font-weight-bold" autoComplete="off" noValidate>
+      <form
+        onSubmit={props.handleSubmit}
+        className="mx-auto font-weight-bold"
+        autoComplete="off"
+        noValidate
+      >
         <div className="form-group">
           <label htmlFor="country">Country/Region</label>
-          <select className="form-control" id="country" name="country" required>
-            <option value="0">India</option>
-            <option value="1">Pakistan</option>
-            <option value="2">Bangladesh</option>
-            <option value="3">Nepal</option>
-            <option value="4">Sri Lanka</option>
+          <select
+            className="form-control"
+            id="country"
+            name="country"
+            value={props.selectedCountry}
+            onChange={props.handleChange}
+            required
+          >
+            {countries.map((country, key) => {
+              if (key === 0) {
+                return (
+                  <option value="x;0" key={key}>
+                    {country.name}
+                  </option>
+                );
+              } else {
+                return (
+                  <option value={`${country.name};${key}`} key={key}>
+                    {country.name}
+                  </option>
+                );
+              }
+            })}
           </select>
           <div className="valid-feedback">
             <i className="far text-success fa-thumbs-up"></i> OK
           </div>
           <div className="invalid-feedback">
-            <i className="fas text-danger fa-exclamation-triangle"></i> Some error in Country/Region.
+            <i className="fas text-danger fa-exclamation-triangle"></i> Some
+            error in Country/Region.
           </div>
         </div>
 
@@ -47,7 +82,7 @@ function NewAddressView(props) {
           type="text"
           name="full_name"
           className={`form-control ${rtl}`}
-          placeholder="Enter user name"
+          placeholder="Enter full name"
           id="full_name"
           value={props.full_name}
           onChange={props.handleChange}
@@ -71,7 +106,6 @@ function NewAddressView(props) {
           error={error.mobile_number}
           infoText={"May be used to assist delivery"}
         />
-
 
         <TextFieldInput
           type="text"
@@ -145,28 +179,61 @@ function NewAddressView(props) {
 
         <div className="form-group">
           <label htmlFor="state">State / Province / Region</label>
-          <select className="form-control" id="state" name="state" required>
-            <option value="0">India</option>
-            <option value="1">Pakistan</option>
-            <option value="2">Bangladesh</option>
-            <option value="3">Nepal</option>
-            <option value="4">Sri Lanka</option>
+          <select
+            className="form-control"
+            id="state"
+            name="state"
+            value={props.selectedState}
+            onChange={props.handleChange}
+            required
+          >
+            {countries[selectedIndex].states.map((state, key) => {
+              if (selectedIndex === 0) {
+                return (
+                  <option value="x;0" key={key}>
+                    {state}
+                  </option>
+                );
+              } else {
+                if (key === 0) {
+                  return (
+                    <option value="x;0" key={key}>
+                      {state}
+                    </option>
+                  );
+                } else {
+                  return (
+                    <option value={state} key={key}>
+                      {state}
+                    </option>
+                  );
+                }
+              }
+            })}
           </select>
           <div className="valid-feedback">
             <i className="far text-success fa-thumbs-up"></i> OK
           </div>
           <div className="invalid-feedback">
-            <i className="fas text-danger fa-exclamation-triangle"></i> Some error in state.
+            <i className="fas text-danger fa-exclamation-triangle"></i> Some
+            error in state.
           </div>
         </div>
 
         <h5>Add delivery instructions</h5>
-        <p>Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than
-          planned.</p>
+        <p>
+          Preferences are used to plan your delivery. However, shipments can
+          sometimes arrive early or later than planned.
+        </p>
 
         <div className="form-group">
           <label htmlFor="addressType">Address Type</label>
-          <select className="form-control" id="addressType" name="addressType" required>
+          <select
+            className="form-control"
+            id="addressType"
+            name="addressType"
+            required
+          >
             <option value="0">Select an Address Type</option>
             <option value="1">Home (7 am – 9 pm delivery)</option>
             <option value="2">Office/Commercial (10 AM - 6 PM delivery)</option>
@@ -175,15 +242,18 @@ function NewAddressView(props) {
             <i className="far text-success fa-thumbs-up"></i> OK
           </div>
           <div className="invalid-feedback">
-            <i className="fas text-danger fa-exclamation-triangle"></i> Some error in address type.
+            <i className="fas text-danger fa-exclamation-triangle"></i> Some
+            error in address type.
           </div>
         </div>
 
-        <button type="submit" className="btn btn-warning shadow rounded">Add address</button>
+        <button type="submit" className="btn btn-warning shadow rounded">
+          Add address
+        </button>
       </form>
       {/* <!-- New Address Form Starts --> */}
     </div>
-  )
+  );
 }
 
-export default NewAddressView
+export default NewAddressView;
