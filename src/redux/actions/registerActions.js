@@ -29,7 +29,6 @@ export const registerRequest = (user, navigate) => (dispatch) => {
     navigate("/login")
 
   }).catch((err)=>{
-  console.log(err)
     // set error related to register
     dispatch(registerError(err.response.data.error))
 

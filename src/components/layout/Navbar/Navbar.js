@@ -11,7 +11,7 @@ const Navbar = (props) => {
   const [productCategory, setProductCategory] = useState([])
   const [query, setQuery] = useState('')
 
-  const navigate = useNavigate
+  const navigate = useNavigate()
 
 
   useEffect(() => {
