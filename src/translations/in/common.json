@@ -77,7 +77,19 @@
     "email_not_exists": "ईमेल मौजूद नहीं है",
     "password_not_match": "डेटाबेस में पासवर्ड मेल नहीं खाता।",
     "oldPassword_not_match": "पुराना पासवर्ड डेटाबेस में मेल नहीं खाता।",
-    "profile_pic_error": "प्रोफ़ाइल पिक में कुछ त्रुटि।"
+    "profile_pic_error": "प्रोफ़ाइल पिक में कुछ त्रुटि।",
+    "address": {
+      "country_empty": "Select any country.",
+      "state_empty": "Select any state.",
+      "full_name_empty": "Enter your name.",
+      "phone_number_invalid": "Enter valid phone number (10 digit).",
+      "pin_code_invalid": "Enter valid zip code (6 digit).",
+      "house_no_empty": "Enter house no.",
+      "street_empty": "Enter street name.",
+      "landmark_empty": "Enter landmark name.",
+      "city_empty": "Enter city name.",
+      "address_type_empty": "Select address type."
+    }
 
   },
   "register": {
@@ -167,5 +179,24 @@
       "title": "स्थिति",
       "message": "प्रोफ़ाइल Pic अद्यतन सफलतापूर्वक।"
     }
+  },
+  "add_new_address": {
+    "heading": "Add a new address",
+    "description": "Or pick up your packages at your convenience from our self-service locations.",
+    "form": {
+      "country": "Country/Region",
+      "full_name": "Full name",
+      "mobile_number": "Mobile number",
+      "pin_code": "PIN code",
+      "house_no": "Flat, House no., Building, Company, Apartment",
+      "street": "Area, Colony, Street, Sector, Village",
+      "landmark": "Landmark",
+      "city": "Town/City",
+      "state": "State / Province / Region",
+      "address_type": "Address Type",
+      "btn_text": "Add address"
+    },
+    "bottom_heading": "Add delivery instructions",
+    "bottom_description": "Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned."
   }
 }
