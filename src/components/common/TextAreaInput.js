@@ -1,8 +1,7 @@
 import React from "react";
 import classnames from "classnames";
 
-function TextFieldInput({
-  type,
+function TextAreaInput({
   name,
   id,
   className,
@@ -26,8 +25,7 @@ function TextFieldInput({
         </label>
       )}
 
-      <input
-        type={type}
+      <textarea
         name={name}
         className={classnames(className, {
           "is-invalid": error,
@@ -37,7 +35,7 @@ function TextFieldInput({
         value={value}
         onChange={onChange}
         disabled={disabled}
-      />
+      ></textarea>
       {infoText && (
         <small className={`form-text text-muted ${rtl}`}>
           <i className="fas text-primary fa-info"></i> {t(infoText)}
@@ -52,4 +50,4 @@ function TextFieldInput({
   );
 }
 
-export default TextFieldInput;
+export default TextAreaInput;

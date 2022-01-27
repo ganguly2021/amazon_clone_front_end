@@ -69,10 +69,10 @@
     "username_empty": "Username cannot be empty.",
     "password_empty": "Password cannot be empty.",
     "password2_empty": "Re-type Password cannot be empty.",
-    "invalid_email" : "Enter a valid email.",
+    "invalid_email": "Enter a valid email.",
     "password2_not_same": "Re-type password is not same as password.",
     "email_exists": "Email already exists",
-    "db_error" : "Some problem in database",
+    "db_error": "Some problem in database",
     "profile_pic_empty": "Select a profile pic.",
     "email_not_exists": "Email not exists.",
     "password_not_match": "Password not match in database.",
@@ -89,8 +89,11 @@
       "landmark_empty": "Enter landmark name.",
       "city_empty": "Enter city name.",
       "address_type_empty": "Select address type."
+    },
+    "seller": {
+      "company_name_empty": "Enter company name.",
+      "description_empty": "Enter company description."
     }
-
   },
   "register": {
     "title": "Register",
@@ -109,7 +112,7 @@
     "have_account_text": "Already have an account?"
   },
   "your_account": {
-    "title":"Your Account",
+    "title": "Your Account",
     "btn1": {
       "title": "Your Orders",
       "sub_title": "Track, return or buy things again."
@@ -205,7 +208,7 @@
     "bottom_description": "Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned."
   },
   "your_seller_account": {
-    "title":"Your Seller Account",
+    "title": "Your Seller Account",
     "btn1": {
       "title": "Delivery",
       "sub_title": "Track orders placed by users."
@@ -226,5 +229,15 @@
       "title": "Close Account",
       "sub_title": "Facing losses ? Then close your account."
     }
+  },
+  "register_seller": {
+    "title": "Register Seller Account",
+    "lbl_your_name": "Your name: ",
+    "lbl_email": "Email: ",
+    "lbl_seller_name": "Seller Name: ",
+    "helper_text_seller_name": "Every business have a name.",
+    "lbl_description": "Description ",
+    "helper_text_description":"Tell us about your business",
+    "btn_text": "Create Seller Account"
   }
 }

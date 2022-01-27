@@ -19,6 +19,7 @@ import SellerIntro from "./components/SellerAccount/SellerIntro";
 import YourAddresses from "./components/YourAddresses/YourAddresses";
 import NewAddress from "./components/NewAddress/NewAddress";
 import YourSellerAccount from "./components/YourSellerAccount/YourSellerAccount";
+import RegisterSeller from "./components/RegisterSeller/RegisterSeller";
 
 // check localStorage for data
 if (localStorage.jwtToken && localStorage.user) {
@@ -88,6 +89,14 @@ function App() {
             element={
               <PrivateRoute>
                 <YourSellerAccount t={t} i18n={i18n} />
+              </PrivateRoute>
+            }
+          />
+          <Route
+            path="/register_seller"
+            element={
+              <PrivateRoute>
+                <RegisterSeller t={t} i18n={i18n} />
               </PrivateRoute>
             }
           />

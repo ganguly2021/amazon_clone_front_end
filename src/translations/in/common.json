@@ -89,6 +89,10 @@
       "landmark_empty": "Enter landmark name.",
       "city_empty": "Enter city name.",
       "address_type_empty": "Select address type."
+    },
+    "seller": {
+      "company_name_empty": "Enter company name.",
+      "description_empty": "Enter company description."
     }
   },
   "register": {
@@ -220,5 +224,15 @@
       "title": "Close Account",
       "sub_title": "Facing losses ? Then close your account."
     }
+  },
+  "register_seller": {
+    "title": "Register Seller Account",
+    "lbl_your_name": "Your name: ",
+    "lbl_email": "Email: ",
+    "lbl_seller_name": "Seller Name: ",
+    "helper_text_seller_name": "Every business have a name.",
+    "lbl_description": "Description ",
+    "helper_text_description":"Tell us about your business",
+    "btn_text": "Create Seller Account"
   }
 }

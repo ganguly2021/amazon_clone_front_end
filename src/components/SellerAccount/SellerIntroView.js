@@ -13,7 +13,7 @@ function SellerIntroView(props) {
       <div className={`col-md-12 p-5 text-white text-center ${rtl}`} style={{backgroundColor: '#008577'}}>
         <h1>{t('seller_intro.heading')}</h1>
         <p>{t('seller_intro.author.name')}<em>{t('seller_intro.author.role')}</em> {t('seller_intro.author.job')}</p>
-        <NavLink to="/your_seller_account" className="btn btn-warning rounded-pill">{t('seller_intro.btn_txt')}</NavLink>
+        <NavLink to="/register_seller" className="btn btn-warning rounded-pill">{t('seller_intro.btn_txt')}</NavLink>
         <p>{t('seller_intro.sub_title')}</p>
       </div>
     </div>
