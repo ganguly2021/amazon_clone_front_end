@@ -1,12 +1,12 @@
 import React, { useEffect } from "react";
 import { Link } from "react-router-dom";
+import classNames from "classnames";
 import TextFieldInput from "./../common/TextFieldInput";
 import countries from "./../../utils/countries.json";
 
 function NewAddressView(props) {
-  const { t, i18n, selectedIndex } = props;
+  const { t, i18n, selectedIndex, error } = props;
   const rtl = i18n.languages[0] == "pk" ? "text-right" : "";
-  const error = {};
 
   return (
     <div className="container mt-5 mb-5">
@@ -15,26 +15,23 @@ function NewAddressView(props) {
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb bg-transparent ml-n3">
           <li className="breadcrumb-item">
-            <Link to="/your_account">Your Account</Link>
+            <Link to="/your_account">{t("bread_crumb.your_account")}</Link>
           </li>
           <li className="breadcrumb-item">
-            <Link to="/your_addresses">Your Addresses</Link>
+            <Link to="/your_addresses">{t("bread_crumb.your_addresses")}</Link>
           </li>
           <li
             className="breadcrumb-item active text-danger"
             aria-current="page"
           >
-            New Address
+            {t("bread_crumb.new_address")}
           </li>
         </ol>
       </nav>
       {/* <!-- URL Breadcrumb Ends --> */}
 
-      <h3 className="font-weight-bold">Add a new address</h3>
-      <p className="font-weight-bold">
-        Or pick up your packages at your convenience from our self-service
-        locations.
-      </p>
+      <h3 className="font-weight-bold">{t("add_new_address.heading")}</h3>
+      <p className="font-weight-bold">{t("add_new_address.description")}</p>
 
       {/* <!-- New Address Form Starts --> */}
       <form
@@ -44,9 +41,11 @@ function NewAddressView(props) {
         noValidate
       >
         <div className="form-group">
-          <label htmlFor="country">Country/Region</label>
+          <label htmlFor="country">{t("add_new_address.form.country")}</label>
           <select
-            className="form-control"
+            className={classNames("form-control", {
+              "is-invalid": error.country,
+            })}
             id="country"
             name="country"
             value={props.selectedCountry}
@@ -73,8 +72,8 @@ function NewAddressView(props) {
             <i className="far text-success fa-thumbs-up"></i> OK
           </div>
           <div className="invalid-feedback">
-            <i className="fas text-danger fa-exclamation-triangle"></i> Some
-            error in Country/Region.
+            <i className="fas text-danger fa-exclamation-triangle"></i>{" "}
+            {t(error.country)}
           </div>
         </div>
 
@@ -86,7 +85,7 @@ function NewAddressView(props) {
           id="full_name"
           value={props.full_name}
           onChange={props.handleChange}
-          lblText={"Full name"}
+          lblText={t("add_new_address.form.full_name")}
           i18n={i18n}
           t={t}
           error={error.full_name}
@@ -100,7 +99,7 @@ function NewAddressView(props) {
           id="mobile_number"
           value={props.mobile_number}
           onChange={props.handleChange}
-          lblText={"Mobile number"}
+          lblText={t("add_new_address.form.mobile_number")}
           i18n={i18n}
           t={t}
           error={error.mobile_number}
@@ -115,7 +114,7 @@ function NewAddressView(props) {
           id="pin_code"
           value={props.pin_code}
           onChange={props.handleChange}
-          lblText={"PIN code"}
+          lblText={t("add_new_address.form.pin_code")}
           i18n={i18n}
           t={t}
           error={error.pin_code}
@@ -129,7 +128,7 @@ function NewAddressView(props) {
           id="house_no"
           value={props.house_no}
           onChange={props.handleChange}
-          lblText={"Flat, House no., Building, Company, Apartment"}
+          lblText={t("add_new_address.form.house_no")}
           i18n={i18n}
           t={t}
           error={error.house_no}
@@ -143,7 +142,7 @@ function NewAddressView(props) {
           id="street"
           value={props.street}
           onChange={props.handleChange}
-          lblText={"Area, Colony, Street, Sector, Village"}
+          lblText={t("add_new_address.form.street")}
           i18n={i18n}
           t={t}
           error={error.street}
@@ -157,7 +156,7 @@ function NewAddressView(props) {
           id="landmark"
           value={props.landmark}
           onChange={props.handleChange}
-          lblText={"Landmark"}
+          lblText={t("add_new_address.form.landmark")}
           i18n={i18n}
           t={t}
           error={error.landmark}
@@ -171,16 +170,18 @@ function NewAddressView(props) {
           id="city"
           value={props.city}
           onChange={props.handleChange}
-          lblText={"Town/City"}
+          lblText={t("add_new_address.form.city")}
           i18n={i18n}
           t={t}
           error={error.city}
         />
 
         <div className="form-group">
-          <label htmlFor="state">State / Province / Region</label>
+          <label htmlFor="state">{t("add_new_address.form.state")}</label>
           <select
-            className="form-control"
+            className={classNames("form-control", {
+              "is-invalid": error.state,
+            })}
             id="state"
             name="state"
             value={props.selectedState}
@@ -215,40 +216,45 @@ function NewAddressView(props) {
             <i className="far text-success fa-thumbs-up"></i> OK
           </div>
           <div className="invalid-feedback">
-            <i className="fas text-danger fa-exclamation-triangle"></i> Some
-            error in state.
+            <i className="fas text-danger fa-exclamation-triangle"></i>{" "}
+            {t(error.state)}
           </div>
         </div>
 
-        <h5>Add delivery instructions</h5>
-        <p>
-          Preferences are used to plan your delivery. However, shipments can
-          sometimes arrive early or later than planned.
-        </p>
+        <h5>{t("add_new_address.bottom_heading")}</h5>
+        <p>{t("add_new_address.bottom_description")}</p>
 
         <div className="form-group">
-          <label htmlFor="addressType">Address Type</label>
+          <label htmlFor="addressType">
+            {t("add_new_address.form.address_type")}
+          </label>
           <select
-            className="form-control"
+            className={classNames("form-control", {
+              "is-invalid": error.address_type,
+            })}
             id="addressType"
             name="addressType"
+            value={props.address_type}
+            onChange={props.handleChange}
             required
           >
-            <option value="0">Select an Address Type</option>
-            <option value="1">Home (7 am – 9 pm delivery)</option>
-            <option value="2">Office/Commercial (10 AM - 6 PM delivery)</option>
+            <option value="">Select an Address Type</option>
+            <option value="home">Home (7 am – 9 pm delivery)</option>
+            <option value="office">
+              Office/Commercial (10 AM - 6 PM delivery)
+            </option>
           </select>
           <div className="valid-feedback">
             <i className="far text-success fa-thumbs-up"></i> OK
           </div>
           <div className="invalid-feedback">
-            <i className="fas text-danger fa-exclamation-triangle"></i> Some
-            error in address type.
+            <i className="fas text-danger fa-exclamation-triangle"></i>{" "}
+            {t(error.address_type)}
           </div>
         </div>
 
         <button type="submit" className="btn btn-warning shadow rounded">
-          Add address
+          {t("add_new_address.form.btn_text")}
         </button>
       </form>
       {/* <!-- New Address Form Starts --> */}

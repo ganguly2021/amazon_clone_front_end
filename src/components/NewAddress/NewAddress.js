@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from "react";
 import NewAddressView from "./NewAddressView";
 import { connect } from "react-redux";
+import { newAddressSchema  } from './../../validations/addressSchema'
+import { getFormattedError } from './../../helpers/validation'
 
 const NewAddress = (props) => {
   const [full_name, setFullName] = useState("");
@@ -13,6 +15,8 @@ const NewAddress = (props) => {
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [country, setCountry] = useState("x");
   const [state, setState] = useState("x");
+  const [address_type, setAddressType] = useState('');
+  const [error, setError] = useState({});
 
   useEffect(() => {
     // cleanup
@@ -46,12 +50,35 @@ const NewAddress = (props) => {
     } else if (name === "state") {
       const [selectedState, index] = value.split(";");
       setState(value);
+    } else if (name === 'addressType'){
+      setAddressType(value);
     }
 
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
+
+    const address = {
+      full_name: full_name,
+      mobile_number: mobile_number,
+      pin_code: pin_code,
+      house_no: house_no,
+      street: street,
+      landmark: landmark,
+      city: city,
+      country: ( country === 'x' ? '' : country.split(';')[0] ),
+      state: ( state === 'x' ? '' : state.split(';')[0] ),
+      address_type: address_type
+    }
+
+    const { error } = newAddressSchema.validate(address, { abortEarly: false })
+
+    if (error){
+      setError(getFormattedError(error))
+    }
+
+    console.log(address)
   };
 
   return (
@@ -69,6 +96,8 @@ const NewAddress = (props) => {
       selectedIndex={selectedIndex}
       selectedState={state}
       selectedCountry={country}
+      error={error}
+      address_type={address_type}
     />
   );
 };
