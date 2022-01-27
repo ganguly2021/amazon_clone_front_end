@@ -69,10 +69,10 @@
     "username_empty": "उपयोगकर्ता नाम खाली नहीं हो सकता।",
     "password_empty": "पासवर्ड खाली नहीं हो सकता",
     "password2_empty": "पासवर्ड दोबारा टाइप न करें।",
-    "invalid_email" : "एक वैध ईमेल प्रविष्ट करें।",
+    "invalid_email": "एक वैध ईमेल प्रविष्ट करें।",
     "password2_not_same": "पासवर्ड के समान री-टाइप पासवर्ड नहीं है।",
     "email_exists": "ईमेल पहले से ही मौजूद है",
-    "db_error" : "डेटाबेस में कुछ समस्या",
+    "db_error": "डेटाबेस में कुछ समस्या",
     "profile_pic_empty": "प्रोफ़ाइल पिक चुनें।",
     "email_not_exists": "ईमेल मौजूद नहीं है",
     "password_not_match": "डेटाबेस में पासवर्ड मेल नहीं खाता।",
@@ -90,7 +90,6 @@
       "city_empty": "Enter city name.",
       "address_type_empty": "Select address type."
     }
-
   },
   "register": {
     "title": "रजिस्टर करें",
@@ -109,7 +108,7 @@
     "have_account_text": "क्या आपके पास पहले से एक खाता मौजूद है?"
   },
   "your_account": {
-    "title":"आपका खाता",
+    "title": "आपका खाता",
     "btn1": {
       "title": "तुम्हारे ऑर्डर",
       "sub_title": "ट्रैक करें, लौटें या फिर से चीजें खरीदें।"
@@ -198,5 +197,28 @@
     },
     "bottom_heading": "Add delivery instructions",
     "bottom_description": "Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned."
+  },
+  "your_seller_account": {
+    "title": "Your Seller Account",
+    "btn1": {
+      "title": "Delivery",
+      "sub_title": "Track orders placed by users."
+    },
+    "btn2": {
+      "title": "Add New Product",
+      "sub_title": "Create a new product to sell."
+    },
+    "btn3": {
+      "title": "Update Account",
+      "sub_title": "Edit seller account details."
+    },
+    "btn4": {
+      "title": "Product List",
+      "sub_title": "Check your all products"
+    },
+    "btn5": {
+      "title": "Close Account",
+      "sub_title": "Facing losses ? Then close your account."
+    }
   }
 }

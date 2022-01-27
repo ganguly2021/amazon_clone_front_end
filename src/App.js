@@ -1,40 +1,39 @@
-import React from 'react'
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route
-} from 'react-router-dom'
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
-import { Provider } from 'react-redux'
-import store from './redux/store'
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
-import LandingPage from './components/layout/LandingPage';
+import LandingPage from "./components/layout/LandingPage";
 import { useTranslation } from "react-i18next";
-import PrivateRoute from './components/common/PrivateRoute'
-import Navbar from './components/layout/Navbar/Navbar';
-import Footer from './components/layout/Footer';
-import Login from './components/Login/Login';
-import Register from './components/Register/Register';
-import YourAccount from './components/YourAccount/YourAccount';
-import setAuthToken from './utils/setAuthToken'
-import { SET_LOGIN_USER } from './redux/actions/types'
-import PasswordChange from './components/PasswordChange/PasswordChange'
-import SellerIntro from './components/SellerAccount/SellerIntro'
-import YourAddresses from './components/YourAddresses/YourAddresses'
-import NewAddress from './components/NewAddress/NewAddress'
+import PrivateRoute from "./components/common/PrivateRoute";
+import Navbar from "./components/layout/Navbar/Navbar";
+import Footer from "./components/layout/Footer";
+import Login from "./components/Login/Login";
+import Register from "./components/Register/Register";
+import YourAccount from "./components/YourAccount/YourAccount";
+import setAuthToken from "./utils/setAuthToken";
+import { SET_LOGIN_USER } from "./redux/actions/types";
+import PasswordChange from "./components/PasswordChange/PasswordChange";
+import SellerIntro from "./components/SellerAccount/SellerIntro";
+import YourAddresses from "./components/YourAddresses/YourAddresses";
+import NewAddress from "./components/NewAddress/NewAddress";
+import YourSellerAccount from "./components/YourSellerAccount/YourSellerAccount";
 
 // check localStorage for data
 if (localStorage.jwtToken && localStorage.user) {
   // setAuthToken to HTTP header
-  setAuthToken(localStorage.jwtToken)
+  setAuthToken(localStorage.jwtToken);
 
   // redux setup for user data
-  store.dispatch({ type: SET_LOGIN_USER, payload: JSON.parse(localStorage.user) })
-
+  store.dispatch({
+    type: SET_LOGIN_USER,
+    payload: JSON.parse(localStorage.user),
+  });
 }
 
 function App() {
-  const [t, i18n] = useTranslation('common');
+  const [t, i18n] = useTranslation("common");
 
   return (
     <Provider store={store}>
@@ -84,11 +83,19 @@ function App() {
               </PrivateRoute>
             }
           />
+          <Route
+            path="/your_seller_account"
+            element={
+              <PrivateRoute>
+                <YourSellerAccount t={t} i18n={i18n} />
+              </PrivateRoute>
+            }
+          />
         </Routes>
         <Footer t={t} i18n={i18n} />
       </Router>
     </Provider>
-  )
+  );
 }
 
 export default App;

@@ -69,10 +69,10 @@
     "username_empty": "ব্যবহারকারীর নাম খালি হতে পারে না.",
     "password_empty": "পাসওয়ার্ড খালি থাকতে পারে না।",
     "password2_empty": "পুনরায় টাইপ করা পাসওয়ার্ড খালি থাকতে পারে না।",
-    "invalid_email" : "একটি বৈধ ইমেল লিখুন।",
+    "invalid_email": "একটি বৈধ ইমেল লিখুন।",
     "password2_not_same": "পুনরায় টাইপ করা পাসওয়ার্ড পাসওয়ার্ডের মতো নয়।",
     "email_exists": "ই - মেইল ​​টি আগে থেকেই আছে",
-    "db_error" : "ডাটাবেসে কিছু সমস্যা",
+    "db_error": "ডাটাবেসে কিছু সমস্যা",
     "profile_pic_empty": "একটি প্রোফাইল পিক নির্বাচন করুন।",
     "email_not_exists": "ইমেল বিদ্যমান নেই।",
     "password_not_match": "পাসওয়ার্ড ডাটাবেসে মেলে না।",
@@ -108,7 +108,7 @@
     "have_account_text": "ইতিমধ্যে একটি সদস্যপদ আছে?"
   },
   "your_account": {
-    "title":"আপনার অ্যাকাউন্ট",
+    "title": "আপনার অ্যাকাউন্ট",
     "btn1": {
       "title": "তোমার আদেশ",
       "sub_title": "জিনিসগুলি ট্র্যাক করুন, ফিরুন বা আবার কিনুন।"
@@ -197,5 +197,28 @@
     },
     "bottom_heading": "Add delivery instructions",
     "bottom_description": "Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned."
+  },
+  "your_seller_account": {
+    "title": "Your Seller Account",
+    "btn1": {
+      "title": "Delivery",
+      "sub_title": "Track orders placed by users."
+    },
+    "btn2": {
+      "title": "Add New Product",
+      "sub_title": "Create a new product to sell."
+    },
+    "btn3": {
+      "title": "Update Account",
+      "sub_title": "Edit seller account details."
+    },
+    "btn4": {
+      "title": "Product List",
+      "sub_title": "Check your all products"
+    },
+    "btn5": {
+      "title": "Close Account",
+      "sub_title": "Facing losses ? Then close your account."
+    }
   }
 }

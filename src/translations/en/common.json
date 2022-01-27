@@ -203,5 +203,28 @@
     },
     "bottom_heading": "Add delivery instructions",
     "bottom_description": "Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned."
+  },
+  "your_seller_account": {
+    "title":"Your Seller Account",
+    "btn1": {
+      "title": "Delivery",
+      "sub_title": "Track orders placed by users."
+    },
+    "btn2": {
+      "title": "Add New Product",
+      "sub_title": "Create a new product to sell."
+    },
+    "btn3": {
+      "title": "Update Account",
+      "sub_title": "Edit seller account details."
+    },
+    "btn4": {
+      "title": "Product List",
+      "sub_title": "Check your all products"
+    },
+    "btn5": {
+      "title": "Close Account",
+      "sub_title": "Facing losses ? Then close your account."
+    }
   }
 }
