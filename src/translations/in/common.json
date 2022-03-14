@@ -183,6 +183,11 @@
       "message": "प्रोफ़ाइल Pic अद्यतन सफलतापूर्वक।"
     }
   },
+  "bread_crumb": {
+    "your_account": "आपका खाता",
+    "your_addresses": "आपके पते",
+    "new_address": "नया पता"
+  },
   "add_new_address": {
     "heading": "एक नया पता लिखो",
     "description": "या हमारे स्वयं-सेवा स्थानों से अपनी सुविधानुसार अपने पैकेज उठाएं।",
