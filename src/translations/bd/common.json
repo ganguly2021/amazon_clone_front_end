@@ -184,55 +184,55 @@
     }
   },
   "add_new_address": {
-    "heading": "Add a new address",
-    "description": "Or pick up your packages at your convenience from our self-service locations.",
+    "heading": "নতুন একটি ঠিকানা যোগ করুন",
+    "description": "অথবা আমাদের স্ব-পরিষেবা অবস্থান থেকে আপনার সুবিধামত আপনার প্যাকেজ বাছাই করুন.",
     "form": {
-      "country": "Country/Region",
-      "full_name": "Full name",
-      "mobile_number": "Mobile number",
-      "pin_code": "PIN code",
-      "house_no": "Flat, House no., Building, Company, Apartment",
-      "street": "Area, Colony, Street, Sector, Village",
-      "landmark": "Landmark",
-      "city": "Town/City",
-      "state": "State / Province / Region",
-      "address_type": "Address Type",
-      "btn_text": "Add address"
+      "country": "দেশ/অঞ্চল",
+      "full_name": "পুরো নাম",
+      "mobile_number": "মোবাইল নম্বর",
+      "pin_code": "পিনকোড",
+      "house_no": "ফ্ল্যাট, বাড়ির নম্বর, বিল্ডিং, কোম্পানি, অ্যাপার্টমেন্ট",
+      "street": "এলাকা, কলোনি, রাস্তা, সেক্টর, গ্রাম",
+      "landmark": "ল্যান্ডমার্ক",
+      "city": "শহর/শহর",
+      "state": "রাজ্য/প্রদেশ/অঞ্চল",
+      "address_type": "ঠিকানার ধরন",
+      "btn_text": "ঠিকানা যোগ করুন"
     },
-    "bottom_heading": "Add delivery instructions",
-    "bottom_description": "Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned."
+    "bottom_heading": "বিতরণ নির্দেশাবলী যোগ করুন",
+    "bottom_description": "আপনার ডেলিভারির পরিকল্পনা করতে পছন্দগুলি ব্যবহার করা হয়। যাইহোক, চালান কখনও কখনও পরিকল্পনার চেয়ে তাড়াতাড়ি বা পরে আসতে পারে।"
   },
   "your_seller_account": {
-    "title": "Your Seller Account",
+    "title": "আপনার বিক্রেতা অ্যাকাউন্ট",
     "btn1": {
-      "title": "Delivery",
-      "sub_title": "Track orders placed by users."
+      "title": "ডেলিভারি",
+      "sub_title": "ব্যবহারকারীদের দ্বারা স্থাপিত আদেশ ট্র্যাক."
     },
     "btn2": {
-      "title": "Add New Product",
-      "sub_title": "Create a new product to sell."
+      "title": "নতুন পণ্য যোগ করুন",
+      "sub_title": "বিক্রি করার জন্য একটি নতুন পণ্য তৈরি করুন।"
     },
     "btn3": {
-      "title": "Update Account",
-      "sub_title": "Edit seller account details."
+      "title": "হালনাগাদ হিসাব",
+      "sub_title": "বিক্রেতার অ্যাকাউন্টের বিবরণ সম্পাদনা করুন।"
     },
     "btn4": {
-      "title": "Product List",
-      "sub_title": "Check your all products"
+      "title": "পণ্য তালিকা",
+      "sub_title": "আপনার সমস্ত পণ্য পরীক্ষা করুন"
     },
     "btn5": {
-      "title": "Close Account",
-      "sub_title": "Facing losses ? Then close your account."
+      "title": "বন্ধ হিসাব",
+      "sub_title": "লোকসানের সম্মুখীন? তারপর আপনার অ্যাকাউন্ট বন্ধ করুন।"
     }
   },
   "register_seller": {
-    "title": "Register Seller Account",
-    "lbl_your_name": "Your name: ",
-    "lbl_email": "Email: ",
-    "lbl_seller_name": "Seller Name: ",
-    "helper_text_seller_name": "Every business have a name.",
-    "lbl_description": "Description ",
-    "helper_text_description":"Tell us about your business",
-    "btn_text": "Create Seller Account"
+    "title": "বিক্রেতা অ্যাকাউন্ট নিবন্ধন",
+    "lbl_your_name": "তোমার নাম: ",
+    "lbl_email": "ইমেইল:",
+    "lbl_seller_name": "বিক্রেতার নাম:",
+    "helper_text_seller_name": "প্রতিটি ব্যবসার একটি নাম আছে।",
+    "lbl_description": "বর্ণনা",
+    "helper_text_description":"আপনার ব্যবসা সম্পর্কে আমাদের বলুন",
+    "btn_text": "বিক্রেতা অ্যাকাউন্ট তৈরি করুন"
   }
 }

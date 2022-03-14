@@ -184,55 +184,55 @@
     }
   },
   "add_new_address": {
-    "heading": "Add a new address",
-    "description": "Or pick up your packages at your convenience from our self-service locations.",
+    "heading": "एक नया पता लिखो",
+    "description": "या हमारे स्वयं-सेवा स्थानों से अपनी सुविधानुसार अपने पैकेज उठाएं।",
     "form": {
-      "country": "Country/Region",
-      "full_name": "Full name",
-      "mobile_number": "Mobile number",
-      "pin_code": "PIN code",
-      "house_no": "Flat, House no., Building, Company, Apartment",
-      "street": "Area, Colony, Street, Sector, Village",
-      "landmark": "Landmark",
-      "city": "Town/City",
-      "state": "State / Province / Region",
-      "address_type": "Address Type",
-      "btn_text": "Add address"
+      "country": "देश/क्षेत्र",
+      "full_name": "पूरा नाम",
+      "mobile_number": "मोबाइल नंबर",
+      "pin_code": "पिन कोड",
+      "house_no": "फ्लैट, मकान संख्या, भवन, कंपनी, अपार्टमेंट",
+      "street": "क्षेत्र, कॉलोनी, गली, सेक्टर, गांव",
+      "landmark": "सीमाचिह्न",
+      "city": "टाउन/सिटी",
+      "state": "राज्य / प्रांत / क्षेत्र",
+      "address_type": "पता मुद्रलेख",
+      "btn_text": "पता जोड़ें"
     },
-    "bottom_heading": "Add delivery instructions",
-    "bottom_description": "Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned."
+    "bottom_heading": "वितरण निर्देश जोड़ें",
+    "bottom_description": "आपकी डिलीवरी की योजना बनाने के लिए प्राथमिकताओं का उपयोग किया जाता है। हालांकि, शिपमेंट कभी-कभी योजना से जल्दी या बाद में आ सकता है।"
   },
   "your_seller_account": {
-    "title": "Your Seller Account",
+    "title": "आपका विक्रेता खाता",
     "btn1": {
-      "title": "Delivery",
-      "sub_title": "Track orders placed by users."
+      "title": "वितरण",
+      "sub_title": "उपयोगकर्ताओं द्वारा दिए गए आदेशों को ट्रैक करें।"
     },
     "btn2": {
-      "title": "Add New Product",
-      "sub_title": "Create a new product to sell."
+      "title": "नया उत्पाद जोड़ें",
+      "sub_title": "बेचने के लिए एक नया उत्पाद बनाएं।"
     },
     "btn3": {
-      "title": "Update Account",
-      "sub_title": "Edit seller account details."
+      "title": "खाता अद्यतन करें",
+      "sub_title": "विक्रेता खाता विवरण संपादित करें।"
     },
     "btn4": {
-      "title": "Product List",
-      "sub_title": "Check your all products"
+      "title": "उत्पादों की सूची",
+      "sub_title": "अपने सभी उत्पादों की जाँच करें"
     },
     "btn5": {
-      "title": "Close Account",
-      "sub_title": "Facing losses ? Then close your account."
+      "title": "खाता बंद करें",
+      "sub_title": "घाटे का सामना करना पड़ रहा है? फिर अपना अकाउंट बंद कर दें।"
     }
   },
   "register_seller": {
-    "title": "Register Seller Account",
-    "lbl_your_name": "Your name: ",
-    "lbl_email": "Email: ",
-    "lbl_seller_name": "Seller Name: ",
-    "helper_text_seller_name": "Every business have a name.",
-    "lbl_description": "Description ",
-    "helper_text_description":"Tell us about your business",
-    "btn_text": "Create Seller Account"
+    "title": "विक्रेता खाता पंजीकृत करें",
+    "lbl_your_name": "तुम्हारा नाम: ",
+    "lbl_email": "ईमेल: ",
+    "lbl_seller_name": "विक्रेता का नाम: ",
+    "helper_text_seller_name": "हर व्यवसाय का एक नाम होता है।",
+    "lbl_description": "विवरण",
+    "helper_text_description":"हमें अपने व्यवसाय के बारे में बताएं",
+    "btn_text": "विक्रेता खाता बनाएँ"
   }
 }

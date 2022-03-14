@@ -184,55 +184,55 @@
     }
   },
   "add_new_address": {
-    "heading": "Add a new address",
-    "description": "Or pick up your packages at your convenience from our self-service locations.",
+    "heading": "ایک نیا پتہ شامل کریں۔",
+    "description": "یا ہمارے سیلف سروس والے مقامات سے اپنی سہولت کے مطابق اپنے پیکجز اٹھا لیں۔",
     "form": {
-      "country": "Country/Region",
-      "full_name": "Full name",
-      "mobile_number": "Mobile number",
-      "pin_code": "PIN code",
-      "house_no": "Flat, House no., Building, Company, Apartment",
-      "street": "Area, Colony, Street, Sector, Village",
-      "landmark": "Landmark",
-      "city": "Town/City",
-      "state": "State / Province / Region",
-      "address_type": "Address Type",
-      "btn_text": "Add address"
+      "country": "ملک/علاقہ",
+      "full_name": "پورا نام",
+      "mobile_number": "موبائل فون کانمبر",
+      "pin_code": "خفیہ نمبر",
+      "house_no": "فلیٹ، مکان نمبر، عمارت، کمپنی، اپارٹمنٹ",
+      "street": "علاقہ، کالونی، گلی، سیکٹر، گاؤں",
+      "landmark": "لینڈ مارک",
+      "city": "قصبہ/شہر",
+      "state": "ریاست/صوبہ/علاقہ",
+      "address_type": "پتہ کی قسم",
+      "btn_text": "ایڈریس شامل کریں۔"
     },
-    "bottom_heading": "Add delivery instructions",
-    "bottom_description": "Preferences are used to plan your delivery. However, shipments can sometimes arrive early or later than planned."
+    "bottom_heading": "ترسیل کی ہدایات شامل کریں۔",
+    "bottom_description": "ترجیحات کا استعمال آپ کی ترسیل کی منصوبہ بندی کے لیے کیا جاتا ہے۔ تاہم، کھیپیں بعض اوقات منصوبہ بندی سے پہلے یا بعد میں پہنچ سکتی ہیں۔"
   },
   "your_seller_account": {
-    "title": "Your Seller Account",
+    "title": "آپ کا بیچنے والا اکاؤنٹ",
     "btn1": {
-      "title": "Delivery",
-      "sub_title": "Track orders placed by users."
+      "title": "ترسیل",
+      "sub_title": "صارفین کے ذریعہ دیئے گئے آرڈرز کو ٹریک کریں۔"
     },
     "btn2": {
-      "title": "Add New Product",
-      "sub_title": "Create a new product to sell."
+      "title": "نیا پروڈکٹ شامل کریں۔",
+      "sub_title": "فروخت کرنے کے لیے ایک نئی پروڈکٹ بنائیں۔"
     },
     "btn3": {
-      "title": "Update Account",
-      "sub_title": "Edit seller account details."
+      "title": "اکاؤنٹ اپ ڈیٹ کریں۔",
+      "sub_title": "بیچنے والے کے اکاؤنٹ کی تفصیلات میں ترمیم کریں۔"
     },
     "btn4": {
-      "title": "Product List",
-      "sub_title": "Check your all products"
+      "title": "مصنوعات کی فہرست",
+      "sub_title": "اپنی تمام مصنوعات کو چیک کریں۔"
     },
     "btn5": {
-      "title": "Close Account",
-      "sub_title": "Facing losses ? Then close your account."
+      "title": "بند اکاونٹ",
+      "sub_title": "نقصانات کا سامنا؟ پھر اپنا اکاؤنٹ بند کر دیں۔"
     }
   },
   "register_seller": {
-    "title": "Register Seller Account",
-    "lbl_your_name": "Your name: ",
-    "lbl_email": "Email: ",
-    "lbl_seller_name": "Seller Name: ",
-    "helper_text_seller_name": "Every business have a name.",
-    "lbl_description": "Description ",
-    "helper_text_description": "Tell us about your business",
-    "btn_text": "Create Seller Account"
+    "title": "سیلر اکاؤنٹ رجسٹر کریں۔",
+    "lbl_your_name": "تمھارا نام: ",
+    "lbl_email": "ای میل:",
+    "lbl_seller_name": "بیچنے والے کا نام: ",
+    "helper_text_seller_name": "ہر کاروبار کا ایک نام ہوتا ہے۔",
+    "lbl_description": "تفصیل ",
+    "helper_text_description": "ہمیں اپنے کاروبار کے بارے میں بتائیں",
+    "btn_text": "سیلر اکاؤنٹ بنائیں"
   }
 }
